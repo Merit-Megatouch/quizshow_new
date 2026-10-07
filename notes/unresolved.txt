@@ -2,92 +2,9 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-SeniorsHelp(int, bool) | quizshow_new.so
 AppendLangExt(char (&) [255], LocaleMasks) | quizshow_new.so
-Debug_Flag_Set(char const*, char const*) | quizshow_new.so
 t_i_l() | quizshow_new.so
-u_m_m_s(char const*, char*, char*, unsigned int) | quizshow_new.so
-Translator::nTranslate(char*, unsigned int, char const*) | quizshow_new.so
-WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | quizshow_new.so
-WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | quizshow_new.so
-WorldClass::WorldClass() | quizshow_new.so
-TriviaClass::GetQuesData(int, int) | quizshow_new.so
-TriviaClass::GetRandomCat() | quizshow_new.so
-TriviaClass::TriviaClass(xml_gamerandom::TrivPICRAND_record*, char*, unsigned char, unsigned char, unsigned char) | quizshow_new.so
-TriviaClass::~TriviaClass() | quizshow_new.so
-system_info::SystemInfo::GetInstance() | quizshow_new.so
-system_info::SystemInfo::IsPlatformGameTime() | quizshow_new.so
-system_info::Get_Motherboard_Type() | quizshow_new.so
-xml_gamerandom::TrivPICRAND_record::AdjustTime(int, long) | quizshow_new.so
-xml_gamerandom::TrivPICRAND_record::TrivPICRAND_record(xml_gamerandom::TrivPICRAND_record const&) | quizshow_new.so
-xml_gamerandom::TrivPICRAND_record::TrivPICRAND_record() | quizshow_new.so
-xml_gamerandom::TrivPICRAND_record::~TrivPICRAND_record() | quizshow_new.so
-xml_gamerandom::TrivPICRAND_record::operator=(xml_gamerandom::TrivPICRAND_record const&) | quizshow_new.so
-abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | quizshow_new.so
-abstract_xml_record::AdjustTimeFields(int, long) | quizshow_new.so
-abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | quizshow_new.so
-abstract_xml_record::abstract_xml_record() | quizshow_new.so
-abstract_xml_record::~abstract_xml_record() | quizshow_new.so
-List::Push(Group*) | quizshow_new.so
-List::Clear(unsigned char) | quizshow_new.so
-List::IsEmpty() | quizshow_new.so
-List::List(List*) | quizshow_new.so
 USBIO::FoundUSB() | quizshow_new.so
-Bitmap::DeCompress() | quizshow_new.so
-Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | quizshow_new.so
-Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | quizshow_new.so
-Bitmap::GreyBmp() | quizshow_new.so
-Bitmap::Colorize(int, int, int) | quizshow_new.so
-Bitmap::Compress(bool, int, unsigned short*) | quizshow_new.so
-Bitmap::NextAnim() | quizshow_new.so
-Sprite::DoNextFrame() | quizshow_new.so
-Sprite::SpriteClick() | quizshow_new.so
-Sprite::AssignString(String*, unsigned long) | quizshow_new.so
-Sprite::ClicksEnabled | quizshow_new.so
-Sprite::LastEventTime() | quizshow_new.so
-Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | quizshow_new.so
-Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | quizshow_new.so
-Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | quizshow_new.so
-Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | quizshow_new.so
-Sprite::Reset() | quizshow_new.so
-Sprite::DoDraw() | quizshow_new.so
-Sprite::Enable(unsigned long) | quizshow_new.so
-Sprite::FadeIn(unsigned long, unsigned long, int, int) | quizshow_new.so
-Sprite::SetBmp(Bitmap*, unsigned long) | quizshow_new.so
-Sprite::Signal(Group::SpriteSignalType) | quizshow_new.so
-Sprite::Signal(SpriteSignal*) | quizshow_new.so
-Sprite::Disable(unsigned long, bool) | quizshow_new.so
-Sprite::FadeOut(unsigned long, unsigned long, int, int) | quizshow_new.so
-Sprite::Message(Group::SpriteSignalType) | quizshow_new.so
-Sprite::Message(SpriteSignal*) | quizshow_new.so
-Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | quizshow_new.so
-Sprite::SetCord(float, float, float, unsigned long) | quizshow_new.so
-Sprite::SetSize(int, int) | quizshow_new.so
-Sprite::DoCommand(int) | quizshow_new.so
-Sprite::PlaySound(char*, int, unsigned long) | quizshow_new.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | quizshow_new.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | quizshow_new.so
-Sprite::~Sprite() | quizshow_new.so
-String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | quizshow_new.so
-Settings::Init() | quizshow_new.so
-Settings::Load() | quizshow_new.so
-Settings::Cleanup() | quizshow_new.so
-Settings::Restore(abstract_xml_record const*) | quizshow_new.so
-Settings::Settings(char const*, unsigned int) | quizshow_new.so
-Settings::~Settings() | quizshow_new.so
-TextUtils::ConvertToMarkup(char const*) | quizshow_new.so
-TextUtils::MeritStringToUTF8(char const*) | quizshow_new.so
-xml_gamerandom::TrivPICRAND_record::operator!=(xml_gamerandom::TrivPICRAND_record const&) const | quizshow_new.so
-Settings::Key(unsigned int, bool) const | quizshow_new.so
-typeinfo for abstract_record | quizshow_new.so
-typeinfo for abstract_xml_record | quizshow_new.so
-typeinfo for Sprite | quizshow_new.so
-typeinfo for Settings | quizshow_new.so
-typeinfo for xml_gamerandom::TrivPICRAND_record | quizshow_new.so
-vtable for DOSLinuxWorld | quizshow_new.so
-clear_bitmap | quizshow_new.so
-gfx_driver | quizshow_new.so
-screen | quizshow_new.so
 uoffset | quizshow_new.so
 usprintf | quizshow_new.so
 ustrzncpy | quizshow_new.so
