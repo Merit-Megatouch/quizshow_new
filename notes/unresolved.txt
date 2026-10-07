@@ -5,7 +5,6 @@
 AppendLangExt(char (&) [255], LocaleMasks) | quizshow_new.so
 t_i_l() | quizshow_new.so
 USBIO::FoundUSB() | quizshow_new.so
-uoffset | quizshow_new.so
 usprintf | quizshow_new.so
 ustrzncpy | quizshow_new.so
 uszprintf | quizshow_new.so
